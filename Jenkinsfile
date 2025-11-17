@@ -7,7 +7,7 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
                 git branch: 'main',
                     credentialsId: 'github-token',
@@ -40,3 +40,4 @@ pipeline {
         }
     }
 }
+
